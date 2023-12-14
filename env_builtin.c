@@ -1,4 +1,6 @@
 #include "shell.h"
+#include <stdlib.h>
+#include <unistd.h>
 
 int shellby_env(char **args, char __attribute__((__unused__)) **front);
 int shellby_setenv(char **args, char __attribute__((__unused__)) **front);

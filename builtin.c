@@ -169,6 +169,8 @@ int shellby_cd(char **args, char __attribute__((__unused__)) **front)
  */
 int shellby_help(char **args, char __attribute__((__unused__)) **front)
 {
+	char *name = "No command for this";
+
 	if (!args[0])
 		help_all();
 	else if (_strcmp(args[0], "alias") == 0)
